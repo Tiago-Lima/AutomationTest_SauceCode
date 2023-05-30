@@ -1,6 +1,7 @@
 README
 
-# Projeto de Automação de Testes com Selenium e SpecFlow em C# (Em desenvolvimento)
+# Projeto de Automação de Testes com Selenium e SpecFlow em C# ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+
 
 Este projeto de automação de testes foi desenvolvido utilizando o Selenium WebDriver, o framework BDD SpecFlow em conjunto com a linguagem de programação C#. O objetivo deste projeto é demonstrar a automação de testes no site Sauce Demo, que é um site de demonstração especialmente projetado para fins de teste automatizado.
 
