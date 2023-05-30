@@ -27,3 +27,17 @@ Scenario: Verifica se a mensagem de erro para login e password invalido aparece 
 	And E o campo login e password sao invalidos
 	When Quando o botao de login for pressionado
 	Then Entao deve ser exibido a mensagem de erro correta
+
+@ErrorLoginAndPasswordEmpty
+Scenario: Verifica se a mensagem de erro para login e password vazios aparece corretamente
+	Given Dado que o navegador seja aberto no site
+	And E o campo login e password estao vazios
+	When Quando o botao de login for pressionado
+	Then Entao deve ser exibido a mensagem de erro para campos vazios
+
+@LoginAndPasswordCorrect
+Scenario: Verifica se a pagina inicial e carregada corretamente apos logar com as credenciais corretas
+	Given Dado que o navegador seja aberto no site
+	And E o campo login e password estao corretos
+	When Quando o botao de login for pressionado
+	Then Entao a pagina inventory deve ser carregada
