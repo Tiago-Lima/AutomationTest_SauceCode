@@ -145,6 +145,92 @@ testRunner.Then("Entao os itens devem aparecer habilitados", ((string)(null)), (
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verifica se ao clicar no item About do menu ocorre o redirecionamento para a seca" +
+            "o About")]
+        [NUnit.Framework.CategoryAttribute("MenuItemAboutClick")]
+        public void VerificaSeAoClicarNoItemAboutDoMenuOcorreORedirecionamentoParaASecaoAbout()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "MenuItemAboutClick"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifica se ao clicar no item About do menu ocorre o redirecionamento para a seca" +
+                    "o About", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 20
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 21
+testRunner.Given("Dado que o navegador seja aberto no site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 22
+testRunner.And("E o usuario esteja logado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+testRunner.When("Quando A HomePage estiver carregada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 24
+testRunner.And("E o Menu for acionado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 25
+testRunner.And("E a opcao About for clicada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 26
+testRunner.Then("Entao a pagina da secao sobre deve ser carregada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verifica se ao clicar no item Logout do menu ocorre o redirecionamento para a pag" +
+            "ina de login")]
+        [NUnit.Framework.CategoryAttribute("MenuItemLogoutClick")]
+        public void VerificaSeAoClicarNoItemLogoutDoMenuOcorreORedirecionamentoParaAPaginaDeLogin()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "MenuItemLogoutClick"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifica se ao clicar no item Logout do menu ocorre o redirecionamento para a pag" +
+                    "ina de login", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 29
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 30
+testRunner.Given("Dado que o navegador seja aberto no site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 31
+testRunner.And("E o usuario esteja logado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 32
+testRunner.When("Quando A HomePage estiver carregada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 33
+testRunner.And("E o Menu for acionado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 34
+testRunner.And("E a opcao Logout for clicada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 35
+testRunner.Then("Entao deve retornar para a pagina de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
