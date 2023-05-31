@@ -12,16 +12,19 @@ namespace AutomationTestSeleniumSpecFlow_SauceCode.Hooks
     class Hooks : DriverHelper
     {
         DriverHelper _driverHelper;
-
+              
         public Hooks(DriverHelper driver)
         {
-            _driverHelper = driver; 
+            _driverHelper = driver;
+           
         }
 
         [BeforeScenario]
         public void BeforeScenario()
         {
-            _driverHelper.Driver = new ChromeDriver(@"C:\chromeDrive");
+            
+            _driverHelper.Driver = new ChromeDriver(@"C:\chromeDriver");
+
         }
 
         [AfterScenario]
