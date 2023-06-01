@@ -231,6 +231,92 @@ testRunner.Then("Entao deve retornar para a pagina de login", ((string)(null)), 
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verifica se ao clicar no item All itens do menu ocorre o redirecionamento para a " +
+            "pagina home e exibe os itens a venda")]
+        [NUnit.Framework.CategoryAttribute("MenuItemAllItensClick")]
+        public void VerificaSeAoClicarNoItemAllItensDoMenuOcorreORedirecionamentoParaAPaginaHomeEExibeOsItensAVenda()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "MenuItemAllItensClick"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifica se ao clicar no item All itens do menu ocorre o redirecionamento para a " +
+                    "pagina home e exibe os itens a venda", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 38
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 39
+testRunner.Given("Dado que o navegador seja aberto no site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 40
+testRunner.And("E o usuario esteja logado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 41
+testRunner.When("Quando A HomePage estiver carregada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 42
+testRunner.And("E o Menu for acionado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 43
+testRunner.And("E a opcao All itens for clicada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 44
+testRunner.Then("Entao deve mostrar a home page com todos os itens", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verifica se ao clicar no item Reset App State do menu ocorre o redirecionamento p" +
+            "ara a pagina home e esvazia os itens do carrinho")]
+        [NUnit.Framework.CategoryAttribute("MenuResetItemClick")]
+        public void VerificaSeAoClicarNoItemResetAppStateDoMenuOcorreORedirecionamentoParaAPaginaHomeEEsvaziaOsItensDoCarrinho()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "MenuResetItemClick"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifica se ao clicar no item Reset App State do menu ocorre o redirecionamento p" +
+                    "ara a pagina home e esvazia os itens do carrinho", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 47
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 48
+testRunner.Given("Dado que o navegador seja aberto no site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 49
+testRunner.And("E o usuario esteja logado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 50
+testRunner.When("Quando A HomePage estiver carregada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 51
+testRunner.And("E o Menu for acionado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 52
+testRunner.And("E a opcao Reset App State for clicada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 53
+testRunner.Then("Entao deve mostrar a home page e esvaziar o carrinho", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
