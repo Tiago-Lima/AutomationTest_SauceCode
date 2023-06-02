@@ -22,9 +22,9 @@ namespace AutomationTestSeleniumSpecFlow_SauceCode.Hooks
         [BeforeScenario]
         public void BeforeScenario()
         {
-            
-            _driverHelper.Driver = new ChromeDriver(@"C:\chromeDriver");
 
+            _driverHelper.Driver = new ChromeDriver(@"C\chromeDriver");
+            
         }
 
         [AfterScenario]

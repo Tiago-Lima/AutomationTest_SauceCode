@@ -1,5 +1,6 @@
 ﻿using AutomationTestSeleniumSpecFlow_SauceCode.Pages;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,9 @@ namespace AutomationTestSeleniumSpecFlow_SauceCode.Steps.HomePageSteps.MenuSteps
         public void EntaoAPaginaDaSecaoSobreDeveSerCarregada()
         {
             Assert.AreEqual("https://saucelabs.com/", _driverHelper.Driver.Url);
+
+            var screenshot = ((ITakesScreenshot)_driverHelper.Driver).GetScreenshot();
+            screenshot.SaveAsFile(@"C:\Users\tiago\Desktop\Workspace\AutomationTest_SauceCode\Evidencias\aboutPageLoaded.png", ScreenshotImageFormat.Png);
         }
 
     }

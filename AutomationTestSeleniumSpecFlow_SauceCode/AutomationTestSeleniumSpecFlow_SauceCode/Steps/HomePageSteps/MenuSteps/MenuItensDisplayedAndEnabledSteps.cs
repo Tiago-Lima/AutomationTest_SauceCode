@@ -1,5 +1,6 @@
 ﻿using AutomationTestSeleniumSpecFlow_SauceCode.Pages;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,7 @@ namespace AutomationTestSeleniumSpecFlow_SauceCode.Steps.HomePageSteps.MenuSteps
         [Then(@"Entao os itens devem aparecer habilitados")]
         public void EntaoOsItensDevemAparecerHabilitados()
         {
+           
             Assert.IsTrue(homePage.menuItemAbout.Displayed);
             Assert.IsTrue(homePage.menuItemAbout.Enabled);
             Assert.IsTrue(homePage.menuItemInventory.Displayed);
@@ -40,6 +42,9 @@ namespace AutomationTestSeleniumSpecFlow_SauceCode.Steps.HomePageSteps.MenuSteps
             Assert.IsTrue(homePage.menuItemReset.Enabled);
             Assert.IsTrue(homePage.closeMenuButton.Displayed);
             Assert.IsTrue(homePage.closeMenuButton.Enabled);
+
+            var screenshot = ((ITakesScreenshot)_driverHelper.Driver).GetScreenshot();
+            screenshot.SaveAsFile(@"C:\Users\tiago\Desktop\Workspace\AutomationTest_SauceCode\Evidencias\menuItensDisplayed.png", ScreenshotImageFormat.Png);
         }
     }
 }

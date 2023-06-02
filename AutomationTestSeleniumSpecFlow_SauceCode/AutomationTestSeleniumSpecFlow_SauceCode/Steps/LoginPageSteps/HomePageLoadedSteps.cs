@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,9 @@ namespace AutomationTestSeleniumSpecFlow_SauceCode.Steps
         [Then(@"Entao a pagina inventory deve ser carregada")]
         public void EntaoAPaginaInventoryDeveSerCarregada()
         {
+            var screenshot = ((ITakesScreenshot)_driverHelper.Driver).GetScreenshot();
+            screenshot.SaveAsFile(@"C:\Users\tiago\Desktop\Workspace\AutomationTest_SauceCode\Evidencias\homePageLoaded.png", ScreenshotImageFormat.Png);
+
             Assert.AreEqual("https://www.saucedemo.com/inventory.html", _driverHelper.Driver.Url);
         }
     }

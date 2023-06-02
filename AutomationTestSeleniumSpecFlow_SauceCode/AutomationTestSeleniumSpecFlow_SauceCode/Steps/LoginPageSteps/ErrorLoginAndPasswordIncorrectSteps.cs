@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,11 +31,15 @@ namespace AutomationTestSeleniumSpecFlow_SauceCode.Steps
         public void QuandoOBotaoDeLoginForPressionado()
         {
             loginPage.submitLogin();
+            
         }
 
         [Then(@"Entao deve ser exibido a mensagem de erro correta")]
         public void EntaoDeveSerExibidoAMensagemDeErroCorreta()
         {
+            var screenshot = ((ITakesScreenshot)_driverHelper.Driver).GetScreenshot();
+            screenshot.SaveAsFile(@"C:\Users\tiago\Desktop\Workspace\AutomationTest_SauceCode\Evidencias\Error_loginAndPasswordIncorrect.png", ScreenshotImageFormat.Png);
+
             Assert.AreEqual("Epic sadface: Username and password do not match any user in this service", loginPage.errorMsg.Text); // Mensagem de erro especificada para este cenário
         }
 
