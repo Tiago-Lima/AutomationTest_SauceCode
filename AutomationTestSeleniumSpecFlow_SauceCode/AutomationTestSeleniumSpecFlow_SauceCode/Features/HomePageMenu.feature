@@ -51,3 +51,12 @@ When Quando A HomePage estiver carregada
 And E o Menu for acionado
 And E a opcao Reset App State for clicada
 Then Entao deve mostrar a home page e esvaziar o carrinho
+
+@CloseMenuButtonClick
+Scenario: Ao clicar no botão de fechar o menu, os itens do menu devem ser ocultados e somente o botão do menu deve aparecer na página principal.
+Given Dado que o navegador seja aberto no site
+And E o usuario esteja logado
+When Quando A HomePage estiver carregada
+And E o Menu for acionado
+And E o botao de fechar o menu for clicado
+Then Entao os itens devem ser ocultados e o botao de menu deve ser exibido habilitado na pagina principal 

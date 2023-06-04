@@ -317,6 +317,50 @@ testRunner.Then("Entao deve mostrar a home page e esvaziar o carrinho", ((string
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Ao clicar no botão de fechar o menu, os itens do menu devem ser ocultados e somen" +
+            "te o botão do menu deve aparecer na página principal.")]
+        [NUnit.Framework.CategoryAttribute("CloseMenuButtonClick")]
+        public void AoClicarNoBotaoDeFecharOMenuOsItensDoMenuDevemSerOcultadosESomenteOBotaoDoMenuDeveAparecerNaPaginaPrincipal_()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "CloseMenuButtonClick"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ao clicar no botão de fechar o menu, os itens do menu devem ser ocultados e somen" +
+                    "te o botão do menu deve aparecer na página principal.", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 56
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 57
+testRunner.Given("Dado que o navegador seja aberto no site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 58
+testRunner.And("E o usuario esteja logado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 59
+testRunner.When("Quando A HomePage estiver carregada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 60
+testRunner.And("E o Menu for acionado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 61
+testRunner.And("E o botao de fechar o menu for clicado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 62
+testRunner.Then("Entao os itens devem ser ocultados e o botao de menu deve ser exibido habilitado " +
+                        "na pagina principal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
