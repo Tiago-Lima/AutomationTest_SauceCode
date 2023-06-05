@@ -12,7 +12,8 @@ Antes de executar os testes automatizados neste projeto, certifique-se de ter o 
 - [Visual Studio](https://visualstudio.microsoft.com/) instalado no seu sistema.
 - Pacotes NuGet do Selenium WebDriver instalados no projeto.
 - Pacotes Nuget do SpecFlow.
-- Chrome Driver
+- ![Pacotes nuget do projeto](../img/pacotes_nuget.png)
+- Chrome Driver compatível com a versão do navegador
 
 ## Configuração do projeto
 

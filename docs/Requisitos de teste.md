@@ -1,4 +1,4 @@
-:clipboard: 
+<span style="font-size: 48px;">:clipboard:</span> 
 # Requisitos de teste
 
 ### Feature login
